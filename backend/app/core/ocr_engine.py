@@ -88,9 +88,8 @@ class OcrEngine:
             engine = PaddleOCR(
                 use_angle_cls=settings.use_angle_cls,
                 lang=language,
-                use_gpu=settings.use_gpu,
+                device='gpu' if settings.use_gpu else 'cpu',
                 det_limit_side_len=settings.ocr_det_limit_side_len,
-                show_log=settings.ocr_show_log,
             )
 
             elapsed = (time.time() - start_time) * 1000
@@ -123,7 +122,7 @@ class OcrEngine:
             engine = self._loadEngine(language)
 
             start_time = time.time()
-            raw_results = engine.ocr(image, cls=True)
+            raw_results = engine.ocr(image)
             elapsed_ms = (time.time() - start_time) * 1000
 
             detections = self._parseResults(raw_results)
