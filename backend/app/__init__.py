@@ -1,0 +1,1 @@
+# ScanCode-OCR Backend Application

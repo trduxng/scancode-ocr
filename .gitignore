@@ -1,1 +1,32 @@
-"PaddleOCR/" 
+# Python
+ocr/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.env
+venv/
+backend/venv/
+backend/temp_uploads/
+
+# Node.js
+node_modules/
+dist/
+*.local
+
+# IDE
+.history/
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Clone repos
+clone_repo/
+
+# Logs
+*.log

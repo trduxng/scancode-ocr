@@ -1,0 +1,22 @@
+# PaddlePaddle GPU (CUDA 12.1)
+paddlepaddle-gpu>=3.0.0
+
+# PaddleOCR — PP-OCRv5
+paddleocr>=2.9.0
+
+# Web Framework
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.0
+python-multipart>=0.0.9
+
+# Image Processing
+opencv-python-headless>=4.9.0
+numpy>=1.24.0
+Pillow>=10.0.0
+
+# Data Validation & Settings
+pydantic>=2.0.0
+pydantic-settings>=2.0.0
+
+# CORS & Utils
+aiofiles>=23.0.0
